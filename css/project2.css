@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+:focus {
+    outline-style: none;
+}
+
+body {
+    height: 720px;
+    position: relative;
+}
+
+
+/*start div-background*/
+
+.div-co {
+    order: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.div-co>div {
+    position: absolute;
+    float: right;
+    background-color: #fab1a0;
+    border-radius: 100% 0px 0px 0px;
+}
+
+.div-co1 {
+    top: 10%;
+    right: 0;
+    width: 10%;
+    height: 90%;
+}
+
+.div-co2 {
+    top: 39%;
+    right: 6%;
+    width: 261px;
+    height: 439px;
+}
+
+.div-co3 {
+    top: 56%;
+    right: 17%;
+    width: 300px;
+    height: 317px;
+}
+
+.div-co4 {
+    top: 72%;
+    right: 32%;
+    width: 270px;
+    height: 200px;
+}
+
+
+/*end div-background*/
+
+
+/* start navbar*/
+
+.bg {
+    background-color: rgb(247, 123, 123);
+}
+
+.navbar-brand span:nth-of-type(1) {
+    color: white;
+}
+
+
+/* end navbar*/
+
+
+/*start image*/
+
+.image {
+    order: 2;
+    width: 100%;
+    height: 665px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.div-img {
+    width: 50%;
+    height: 100%;
+}
+
+.img-background {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.img {
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    top: 0%;
+    left: 25%;
+}
+
+
+/*end image*/
+
+
+/* start login*/
+
+.login {
+    height: 100%;
+    width: 50%;
+}
+
+.login .login-img {
+    width: 100px;
+    height: 100px;
+}
+
+.box-login {
+    height: 100%;
+    width: 100%;
+    padding-top: 15%;
+}
+
+.box-login .index>div {
+    position: relative;
+    padding-top: 25px;
+}
+
+.box-login .index div>i,
+p {
+    opacity: .3;
+    float: left;
+    position: absolute;
+}
+
+.box-login .index div>p {
+    left: 28%;
+    top: 50%;
+    z-index: -1;
+}
+
+.box-login .index div>i {
+    left: 24%;
+    top: 55%;
+}
+
+.box-login .index div>input {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    width: 45%;
+}
+
+.box-login .index div span {
+    opacity: .3;
+    float: left;
+    position: absolute;
+    left: 24%;
+    bottom: 0px;
+    width: 50%;
+    height: 2px;
+    background: black;
+}
+
+.box-login .index div input:focus+span {
+    transition: .4s;
+    opacity: 1;
+    background: rgb(247, 123, 123);
+}
+
+.box-login .index div input:focus~i {
+    transition: .4s;
+    opacity: 1;
+    color: rgb(247, 123, 123);
+}
+
+.box-login .index div input:focus~p {
+    top: 8px;
+    left: 25%;
+    transition: .4s;
+    opacity: 1;
+    color: rgb(247, 123, 123);
+}
+
+.but {
+    border: 1px solid rgb(252, 113, 113);
+    background-color: #fca693;
+    /* rgb(247, 123, 123)*/
+    box-shadow: 2px 2px 30px rgb(252, 113, 113);
+    border-radius: 30px 30px;
+    margin: 40px 20px 0 0;
+    font-size: 25px;
+    outline: none;
+    height: 45px;
+    width: 50%;
+}
+
+.but:hover {
+    transition: .5s;
+    border: 1px solid rgb(247, 123, 123);
+    background-color: #fab1a0;
+    /* rgb(247, 123, 123)*/
+    box-shadow: 0px 0px 20px rgb(248, 75, 75),0px 0px 20px rgb(248, 75, 75);
+    transform: scale(1.1);
+}
+
+
+/* end login*/
+
+@media ( max-width:767px) {
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(252, 113, 113);
+    }
+    .image {
+        background-color: #fff;
+        border-radius: 50% 0 50%;
+    }
+    .div-img {
+        display: none;
+    }
+    .login {
+        width: 100%;
+    }
+    .box-login .index div>input {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:767px) and (max-width:1300px) {
+    .box-login .index div>input {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+}
+
+
+/* start My framework*/
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.float-l {
+    float: left;
+}
+
+.margin-top {
+    margin-top: 200px;
+}
+
+
+/* end My framework*/

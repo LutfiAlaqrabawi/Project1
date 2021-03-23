@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', sans-serif; }
+
+:focus {
+  outline-style: none; }
+
+/* start navbar*/
+.bg {
+  background-color: #f77b7b; }
+
+.navbar-brand span:nth-of-type(1) {
+  color: white; }
+
+/* end navbar*/
+/*start images */
+.img-bar .container-img .images {
+  width: 100%;
+  height: 600px;
+  position: relative; }
+  .img-bar .container-img .images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .img-bar .container-img .images img:nth-of-type(2) {
+    animation-delay: 100s;
+    animation: moving 30s infinite ease-in-out; }
+  .img-bar .container-img .images img:last-of-type {
+    animation-delay: 100s;
+    animation: moving 30s infinite ease-in-out; }
+@keyframes moving {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/*end images */
+/*start brand names*/
+.brand-names .container .card {
+  width: 100%;
+  height: 400px;
+  margin-left: 37px;
+  border: none;
+  position: relative;
+  float: left; }
+  @media (max-width: 767px) {
+    .brand-names .container .card {
+      width: 80%;
+      margin-top: 100px; } }
+  @media (min-width: 768px) {
+    .brand-names .container .card {
+      width: 44%;
+      margin-top: 100px; } }
+  @media (min-width: 992px) {
+    .brand-names .container .card {
+      width: 30%;
+      margin-left: 30px;
+      margin-top: 200px; } }
+  .brand-names .container .card:hover img {
+    left: 25%;
+    border-radius: 50%;
+    transition: 2s; }
+    @media (min-width: 320px) {
+      .brand-names .container .card:hover img {
+        top: -50px;
+        width: 125px;
+        height: 125px; } }
+    @media (min-width: 425px) {
+      .brand-names .container .card:hover img {
+        top: -75px;
+        width: 150px;
+        height: 150px; } }
+  .brand-names .container .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 20px;
+    transition: 1s;
+    z-index: 2; }
+  .brand-names .container .card div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #eeeeee;
+    border: 2px solid #aaa;
+    box-shadow: 5px 5px 10px #aaa;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-top: 110px;
+    z-index: 1; }
+    .brand-names .container .card div p {
+      margin-bottom: 50px; }
+    .brand-names .container .card div a {
+      text-decoration: none;
+      color: #f77b7b;
+      width: 150px;
+      border: 2px solid #f77b7b;
+      padding: 10px;
+      border-radius: 14px;
+      transition: 1s; }
+      .brand-names .container .card div a:hover {
+        color: #fff;
+        border: 2px solid #fff;
+        background-color: #f77b7b;
+        transform: scale(1.1); }
+
+/*end brand names*/
+.Features {
+  position: relative;
+  width: 100%; }
+  .Features .Other-brands {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    margin-top: 150px; }
+    .Features .Other-brands h4 {
+      width: 60%;
+      margin-bottom: 30px;
+      font-size: 30px;
+      text-decoration: underline; }
+    .Features .Other-brands .groups-img {
+      width: 75%;
+      height: 445px; }
+      .Features .Other-brands .groups-img .brands {
+        width: 38%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0 1px 7px black;
+        margin: 10px;
+        border-radius: 5px; }
+        .Features .Other-brands .groups-img .brands h5 {
+          margin-top: 10px;
+          font-size: 20px; }
+        .Features .Other-brands .groups-img .brands img {
+          width: 153px;
+          height: 166px;
+          display: flex;
+          justify-content: center;
+          float: left;
+          margin: 16px;
+          box-shadow: 0 0 5px black; }
+
+.footer {
+  margin-top: 400px;
+  width: 100%;
+  height: 600px;
+  background-color: #f77b7b; }
+  .footer .contact {
+    position: relative; }
+    .footer .contact ul {
+      position: absolute;
+      margin-top: 485px;
+      padding-top: 10px;
+      text-align: center;
+      width: 75%;
+      height: 100px; }
+      .footer .contact ul ol {
+        width: 33.3333%;
+        height: 100%;
+        float: left;
+        padding-top: 10px;
+        color: #fff; }
+      .footer .contact ul ol:nth-of-type(1) {
+        border-left: 2px solid #fff; }
+      .footer .contact ul ol:nth-of-type(2) {
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff; }
+      .footer .contact ul ol:nth-of-type(3) {
+        border-right: 2px solid #fff; }
+
+.bar {
+  width: 100%;
+  height: 35px; }
+  .bar .subscribe {
+    display: flex;
+    justify-content: space-around;
+    color: #f77b7b;
+    height: 35px; }
+    .bar .subscribe ol {
+      float: left;
+      padding-left: 15px; }
+    .bar .subscribe a {
+      color: #f77b7b;
+      font-size: 20px; }
+
+/* start My framework*/
+.clearfix {
+  clear: both; }
+
+.container {
+  width: 1200px;
+  margin: auto; }
+
+.text-align {
+  text-align: center; }
+
+.float-l {
+  float: left; }
+
+.margin-top {
+  margin-top: 200px; }
+
+/* end My framework*/
+
+/*# sourceMappingURL=project3.css.map */
